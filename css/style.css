@@ -1,0 +1,72 @@
+@font-face { font-family: Delicious; src: url(../etc/delicious-roman.otf); }
+
+* { margin: 0; padding: 0; }
+
+html {
+background: #111 url(../img/bokeh.jpg) center no-repeat;
+color: #ffe;
+font: 17px Delicious, 'Lucida Grande', 'Lucida Sans', Helvetica, Arial, sans-serif; }
+html {
+height: 100%;
+position: relative; }
+
+a {
+color: #fff;
+text-decoration: underline; }
+a:hover {
+text-decoration: none; }
+
+#wrapper {
+margin: 100px auto 0;
+width: 1000px; }
+
+.halftransparent {
+background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWOYPXu2DwAFxAIeBz7ufQAAAABJRU5ErkJggg==') repeat;
+*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4c9b9b9b, endColorstr=#4c9b9b9b) /* won't validate, CSS hack, a method for alpha color backgrounds, http://tinyurl.com/ly6rj2 */;
+display: inline; /* fix for double margin bug */
+padding: 20px; }
+#title {
+float: left;
+min-height: 80px;
+width: 960px; }
+#explanation {
+float: left;
+margin: -7px 0 0 10px;
+width: 410px; }
+#input {
+float: right;
+line-height: 28px;
+margin: -5px 10px 0 -10px;
+text-align: right;
+width: 500px; }
+#output {
+float: right;
+margin: -7px 5px 0 -7px;
+width: 502px; }
+
+h1 {
+font-size: 28px;
+line-height: 40px;
+text-align: center; }
+
+h2 {
+font-size: 24px;
+margin: -10px 0 10px;
+text-align: center; }
+
+label {
+display: block; }
+input {
+width: 350px; }
+
+#code {
+background: #111;
+font-family: 'Andale Mono', monospace;
+overflow: auto;
+padding: 10px;
+white-space: nowrap; }
+
+#imgsrc {
+bottom: 5px;
+position: absolute;
+right: 5px; }
