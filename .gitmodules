@@ -1,0 +1,3 @@
+[submodule "js/colortriangle"]
+	path = js/colortriangle
+	url = git://github.com/timjb/colortriangle.git

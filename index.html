@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset=utf-8>
+<title>Teiltransparente Hintergrundfarben in allen Browsern (fast) ohne PNG-Dateien &ndash; CSS-Generator</title>
+<meta name=description content="CSS-Generator für einfarbige, halbtransparente Hintergründe, die in allen Browsern funktionieren">
+<meta name=author content="Tim Baumann">
+<meta name=language content=de>
+<link rel=stylesheet href=css/style.css>
+<link rel="shortcut icon" href=img/favicon.png>
+
+<body>
+<div id=wrapper>
+
+<div id=title class=halftransparent>
+	<h1>Teiltransparente Hintergrundfarben in allen Browsern (fast) ohne PNG-Dateien &ndash; CSS-Generator</h1>
+</div>
+<div id=explanation class=halftransparent>
+	Dieser CSS-Generator erzeugt den Code um Elementen eine halbdurchsichtige Hintergrundfarbe zu verpassen. Die Methode, die in allen Browsern funktioniert, hat Peter Kröner, deren Erfinder, in <a href=http://www.peterkroener.de/teiltransparente-hintergrundfarben-in-allen-browsern-fast-ohne-png-dateien/>einem Blogeintrag</a> beschrieben. Das ganze funktioniert mit halbtransparenten 1-Pixel-PNGs, die als Data-URL modernen Browsern verabreicht werden, und der MS-proprietären CSS-Eigenschaft filter für den Internet Exploder. Leider ist das Ganze etwas umständlich. Deshalb dieser Generator. Einfach das Feld Farbe mit einem Hex-Wert befüllen und in das Feld Alpha-Wert eine Zahl zwischen 0 (= voll transparent) und 1 (= voll opak) eingeben. Den einbaufertigen Code kannst du sofort dem entsprechenden Feld entnehmen. Dieser enthält einen CSS-Hack, damit der IE7 nicht sowohl PNG als auch den Filter anzeigt. Du kannst dieses Problem natürlich auch mit Conditional Comments lösen. 
+</div>
+<div id=input class=halftransparent>
+	<h2>Eingabe</h2>
+	<form>
+		<label>Farbe: <input type=color id=color value=#424e6a></label>
+		<label>Alpha-Wert: <input type=number id=alpha value=0.5 min=0 max=1 step=any></label>
+	</form>
+</div>
+<div id=output class=halftransparent>
+	<h2>Ausgabe</h2>
+	<pre id=code></pre>
+</div>
+
+</div><!-- close wrapper -->
+
+<div id=imgsrc>
+	Bokeh background by  <a href=http://www.flickr.com/photos/calebkimbrough/4151252608/in/set-72157622915120782/>calebkimbrough</a>
+</div>
+
+<script src=js/colortriangle/colortriangle.js></script>
+<script defer src=js/app.js></script>
